@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -18,17 +18,111 @@
     <!-- font-awesome CDN -->
     <script src="https://kit.fontawesome.com/2e6340b9c5.js" crossorigin="anonymous"></script>
     <!-- Tailwind customization -->
-
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'accent': '#179800',
+                        'secondary': '#EFEBE3',
+                        'text': '#111111',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- style -->
     <style>
         .font-sora {
             font-family: "Sora", serif;
         }
+        /* banner animation   */
+        @keyframes floatT {
+            0% {transform: translateY(-100%)}
+            50% {transform: translateY(0%)}
+            100% {transform: translateX(100%)}
+        }
+        @keyframes floatP {
+            0% {transform: translateY(100%)}
+            50% {transform: translateY(0%)}
+            100% {transform: translateX(-100%)}
+        }
     </style>
 </head>
 
 <body class="font-sora">
+    <!-- header section -->
+    <header class=" bg-gradient-to-b from-white to-[#EFEBE3]">
+        <!-- header container -->
+        <div class="md:max-w-screen-xl md:mx-auto px-4">
+            <!-- navbar -->
+            <div class="mt-6">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <a href=""><img src="c2-assets/logo-header.png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 space-x-4">
+                            <li><a class="hover:bg-accent hover:text-white">Product</a></li>
+                            <li><a class="hover:bg-accent hover:text-white">Services</a></li>
+                            <li><a class="hover:bg-accent hover:text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="hidden lg:block space-x-5">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a
+                                class="btn border border-accent bg-transparent hover:bg-accent hover:text-white">Login</a>
+                            <a
+                                class="btn bg-accent text-white hover:bg-transparent hover:text-black hover:border hover:border-accent">Register</a>
+                        </div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banner section -->
+            <div class="flex flex-col items-center text-center space-y-4 md:space-y-8">
+                <!-- banner title -->
+                <div class="space-y-6 mt-12 md:mt-20 md:w-[850px] ">
+                    <h1 class="text-3xl md:text-5xl font-semibold text-text animate-[floatT_5s_infinite] ">Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-lg md:text-xl text-text animate-[floatP_5s_infinite]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                </div>
+                <!-- banner image -->
+                <div class="scale-x-110 md:scale-x-100 relative">
+                    <img class="w-full" src="c2-assets/hero-vegetables.png" alt="hero-vegetables">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main class="md:max-w-screen-xl md:mx-auto px-4">
+        <!-- services section -->
+         <section class="my-12 md:my-36">
+            <h2 class="text-accent text-3xl md:text-4xl font-semibold">Services</h2>
+            <!-- services card container -->
+             <div class="grid grid-cols-1 gap-5 md:grid-col-3 md:gap-6">
+                <!-- car 1 -->
+                 div
+             </div>
+         </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
