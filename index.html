@@ -37,16 +37,34 @@
         .font-sora {
             font-family: "Sora", serif;
         }
+
         /* banner animation   */
         @keyframes floatT {
-            0% {transform: translateY(-100%)}
-            50% {transform: translateY(0%)}
-            100% {transform: translateX(100%)}
+            0% {
+                transform: translateY(-100%)
+            }
+
+            50% {
+                transform: translateY(0%)
+            }
+
+            100% {
+                transform: translateX(100%)
+            }
         }
+
         @keyframes floatP {
-            0% {transform: translateY(100%)}
-            50% {transform: translateY(0%)}
-            100% {transform: translateX(-100%)}
+            0% {
+                transform: translateY(100%)
+            }
+
+            50% {
+                transform: translateY(0%)
+            }
+
+            100% {
+                transform: translateX(-100%)
+            }
         }
     </style>
 </head>
@@ -95,8 +113,10 @@
             <div class="flex flex-col items-center text-center space-y-4 md:space-y-8">
                 <!-- banner title -->
                 <div class="space-y-6 mt-12 md:mt-20 md:w-[850px] ">
-                    <h1 class="text-3xl md:text-5xl font-semibold text-text animate-[floatT_5s_infinite] ">Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-                    <p class="text-lg md:text-xl text-text animate-[floatP_5s_infinite]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                    <h1 class="text-3xl md:text-5xl font-semibold text-text animate-[floatT_5s_infinite] ">Freshness
+                        <span class="text-accent">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-lg md:text-xl text-text animate-[floatP_5s_infinite]">Shop your daily essentials at
+                        unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 </div>
                 <!-- banner image -->
                 <div class="scale-x-110 md:scale-x-100 relative">
@@ -109,14 +129,45 @@
     <!-- main section -->
     <main class="md:max-w-screen-xl md:mx-auto px-4">
         <!-- services section -->
-         <section class="my-12 md:my-36">
+        <section class="my-12 md:my-36">
             <h2 class="text-accent text-3xl md:text-4xl font-semibold">Services</h2>
             <!-- services card container -->
-             <div class="grid grid-cols-1 gap-5 md:grid-col-3 md:gap-6">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 md:justify-between mt-8 md:mt-12">
                 <!-- car 1 -->
-                 div
-             </div>
-         </section>
+                <div class="card card-compact bg-secondary p-7 md:p-8 ">
+                    <div class="bg-white rounded-full w-32 md:w-36 h-32 md:h-36  mx-auto">
+                        <img class="p-5 md:p-6" src="c2-assets/service.png"
+                            alt="Shoes" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">24/7 Services </h2>
+                        <p>"24/7 services ensure continuous support, reliability, and accessibility anytime, day or night, without interruption."</p>
+                    </div>
+                </div>
+                <!-- car 2 -->
+                <div class="card card-compact bg-secondary p-7 md:p-8 ">
+                    <div class="bg-white rounded-full w-32 md:w-36 h-32 md:h-36 mx-auto">
+                        <img class="p-5 md:p-6" src="c2-assets/delivery.png"
+                            alt="Shoes" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Fast Delivery</h2>
+                        <p>Fast delivery ensures quick, reliable, and efficient shipping, bringing your orders to you on time.</p>
+                    </div>
+                </div>
+                <!-- car 3 -->
+                <div class="card card-compact bg-secondary p-7 md:p-8 ">
+                    <div class="bg-white rounded-full w-32 md:w-36 h-32 md:h-36 mx-auto">
+                        <img class="p-5 md:p-6 " src="c2-assets/healthy.png"
+                            alt="Shoes" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Healthy Products </h2>
+                        <p>Healthy products are natural, nutritious, and safe, promoting well-being and a balanced lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer section  -->
